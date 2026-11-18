@@ -1,16 +1,82 @@
-# React + Vite
+# ZenPay
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+ZenPay is a responsive landing page for a next-generation digital payment platform. It presents the product, its features, billing, card offers, customer testimonials and a call to action, in a dark theme with a cyan accent.
 
-Currently, two official plugins are available:
+**Live site:** https://idyllic-narwhal-6d9c26.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+| Area | Technology |
+|---|---|
+| UI library | React |
+| Build tool | Vite |
+| Styling | Tailwind CSS v4 (`@tailwindcss/vite`) with custom CSS gradients |
+| Font | Poppins (Google Fonts) |
+| Linting | Oxlint |
+| Version control | Git and GitHub |
+| Hosting | Netlify (auto-deploys on every push to `main`) |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sections
 
-## Expanding the Oxlint configuration
+- Navbar
+- Hero
+- Stats
+- Business
+- Billing
+- Card deal
+- Testimonials
+- Clients
+- Call to action
+- Footer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Project structure
+
+```
+ZenPay/
+├── public/
+├── src/
+│   ├── assets/        images, icons and logo
+│   ├── components/    page sections and reusable UI parts
+│   ├── constants/     text content and data used by components
+│   ├── App.jsx
+│   ├── index.css      Tailwind import, theme and custom gradients
+│   ├── main.jsx
+│   └── style.js       shared style classes
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+## Getting started
+
+Requirements: Node.js 20 or newer and npm.
+
+```bash
+git clone https://github.com/yash-01-sketch/ZenPay.git
+cd ZenPay
+npm install
+npm run dev
+```
+
+The app runs at http://localhost:5173.
+
+## Scripts
+
+| Command | What it does |
+|---|---|
+| `npm run dev` | Starts the development server with hot reload |
+| `npm run build` | Creates the production build in `dist/` |
+| `npm run preview` | Serves the production build locally |
+
+## Deployment
+
+The site is hosted on Netlify and connected to this GitHub repository.
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+Every `git push` to `main` triggers a new deploy.
+
+## License
+
+Copyright © 2026 ZenPay. All rights reserved.
